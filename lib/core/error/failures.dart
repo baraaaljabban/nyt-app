@@ -1,20 +1,94 @@
 abstract class Failure {
   final String message;
-  Failure(this.message);
+  final String? title;
+
+  Failure({required this.message, this.title});
+
+  String get detailedMessage;
+
+  /// returning current class name as error type
+  String get errorType => runtimeType.toString();
 }
 
-class InternetConnectionFailure extends Failure {
-  InternetConnectionFailure(String message) : super(message);
-}
-class InternetConnectionFailures extends Failure {
-  InternetConnectionFailures() : super("");
+/// Throw if body string return is in valid json format, which cause it has the issue when trying to decode
+/// Mostly will be thrown at data layer.
+class JsonFormatFailure extends Failure {
+  JsonFormatFailure({required String message}) : super(message: message);
+
+  @override
+  String get detailedMessage => '$message [err: json_err]';
 }
 
-class UnExpectedServerResponseFailure extends Failure {
-  UnExpectedServerResponseFailure(String message) : super(message);
+/// Mobile is not connecting to wifi or data connection
+class ConnectionUnavailableFailure extends Failure {
+  ConnectionUnavailableFailure({String? message}) : super(message: message ?? 'No internet connection');
+
+  @override
+  String get detailedMessage => '$message [err: conn_err]';
 }
 
-class UnknownFailuer extends Failure {
-  UnknownFailuer({required String message}) : super(message);
+/// Thrown if server http status is 5xx
+class ServerFailure extends Failure {
+  int? statusCode;
+  ServerFailure({int? statusCode, required String message}) : super(message: message);
+
+  @override
+  String get detailedMessage => '$message [err: server_err] [statusCode: $statusCode ?? 0]';
 }
 
+/// Thrown if the status code return is not being handled
+class UnhandledServerFailure extends Failure {
+  int? statusCode;
+  UnhandledServerFailure({int? statusCode, required String message}) : super(message: message);
+
+  @override
+  String get detailedMessage => '$message [err: unhandled_err] [statusCode: $statusCode]';
+}
+
+/// Thrown if there is error in logic
+class LogicFailure extends Failure {
+  LogicFailure({required String title, required String message}) : super(title: title, message: message);
+
+  @override
+  String get detailedMessage => message;
+}
+
+/// Thrown if some exception is not being handle properly
+class UnhandledFailure extends Failure {
+  final String className;
+  final StackTrace? stackTrace;
+  UnhandledFailure({required this.className, required String message, this.stackTrace}) : super(message: message);
+
+  @override
+  String get detailedMessage => '$message ${stackTrace.toString()}\n[err: unhandled_failure] \n[className: $className]';
+}
+
+class ServerUnavailableFailure extends Failure {
+  int? statusCode;
+  ServerUnavailableFailure({int? statusCode, required String message}) : super(message: message);
+
+  @override
+  String get detailedMessage => '$message [err: server_err] [statusCode: $statusCode ?? 0]';
+}
+
+class ForbiddenFailure extends Failure {
+  int? statusCode;
+  ForbiddenFailure({int? statusCode, required String message}) : super(message: message);
+
+  @override
+  String get detailedMessage => '$message [err: unauthorized_err] [statusCode: $statusCode ?? 0]';
+}
+
+class MfaRequiredFailure extends Failure {
+  MfaRequiredFailure({required String title, required String message}) : super(title: title, message: message);
+
+  @override
+  String get detailedMessage => message;
+}
+
+class InputFailure extends Failure {
+  InputFailure({required String message}) : super(message: message);
+
+  @override
+  String get detailedMessage => message;
+}
