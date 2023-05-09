@@ -40,6 +40,16 @@ class ServerErrorException implements CustomException {
 
   @override
   String toString() => 'ServerErrorException(statusCode: $statusCode, body: $body)';
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is ServerErrorException && other.statusCode == statusCode && other.body == body;
+  }
+
+  @override
+  int get hashCode => statusCode.hashCode ^ body.hashCode;
 }
 
 /// Throw when API is returning API status that beyond our handling

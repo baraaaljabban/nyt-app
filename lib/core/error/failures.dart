@@ -61,6 +61,16 @@ class UnhandledFailure extends Failure {
 
   @override
   String get detailedMessage => '$message ${stackTrace.toString()} [err: unhandled_failure] [className: $className]';
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is UnhandledFailure && other.className == className && other.stackTrace == stackTrace;
+  }
+
+  @override
+  int get hashCode => className.hashCode ^ stackTrace.hashCode;
 }
 
 class ServerUnavailableFailure extends Failure {

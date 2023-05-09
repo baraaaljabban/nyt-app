@@ -10,7 +10,7 @@ import 'package:nyt/features/articles/domain/usecases/most_popular.dart';
 import 'package:nyt/features/articles/domain/usecases/search_uc.dart';
 import 'package:nyt/features/articles/presentation/cubit/articles_cubit.dart';
 
-import 'mocks.mocks.dart';
+import '../../../mocks.mocks.dart';
 
 void main() {
   late MostPopularArticleUC mostPopularArticleUC;
@@ -24,18 +24,18 @@ void main() {
   var fail = ServerUnavailableFailure(message: 'fail');
   var query = 'example';
   setUp(() {
-    // Initialize the necessary objects
     mockArticleRepository = MockArticleRepository();
     mostPopularArticleUC = MostPopularArticleUC(repository: mockArticleRepository);
     searchArticleUC = SearchArticleUC(repository: mockArticleRepository);
 
     articlesCubit = ArticlesCubit(searchArticleUC: searchArticleUC, mostPopularArticleUC: mostPopularArticleUC);
     when(mockArticleRepository.getMostPopularArticle(type: ArticleType.viewed, days: 7)).thenAnswer((realInvocation) async => right([]));
-    when(searchArticleUC(params: SearchArticleParams(query: query))).thenAnswer((_) async => Right([]));
+    when(searchArticleUC(params: SearchArticleParams(query: query))).thenAnswer(
+      (_) async => const Right([]),
+    );
   });
 
   group('ArticlesCubit', () {
-    // Test the getArticlesList method
     blocTest<ArticlesCubit, ArticlesState>(
       'emits [ArticlesLoadingState, ArticlesSuccessState] when getArticlesList is called successfully',
       build: () {
@@ -78,7 +78,6 @@ void main() {
       ],
     );
 
-// Test case for handling an error in searchForAnArticle
     blocTest<ArticlesCubit, ArticlesState>(
       'emits [ArticlesLoadingState, ArticlesErrorState] when searchForAnArticle encounters an error',
       build: () => articlesCubit,

@@ -34,7 +34,7 @@ class ArticleRepositoryImpl extends ArticleRepository with ErrorHandler {
       } else if (e is Exception) {
         return Left(mapCommonExceptionToFailure(e));
       }
-      return Left(UnhandledFailure(className: e.runtimeType.toString(), message: e.toString()));
+      return Left(UnhandledFailure(className: 'ArticleRepositoryImpl', message: e.toString()));
     }
   }
 
@@ -53,7 +53,7 @@ class ArticleRepositoryImpl extends ArticleRepository with ErrorHandler {
       } else if (e is Exception) {
         return Left(mapCommonExceptionToFailure(e));
       }
-      return Left(UnhandledFailure(className: e.runtimeType.toString(), message: e.toString()));
+      return Left(UnhandledFailure(className: 'ArticleRepositoryImpl', message: e.toString()));
     }
   }
 }

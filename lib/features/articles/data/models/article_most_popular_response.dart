@@ -45,4 +45,14 @@ class ArticleModel extends Article {
         title: table.title,
         publishedDate: table.publishedDate,
       );
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is ArticleModel && other.publishedDate == publishedDate && other.title == title;
+  }
+
+  @override
+  int get hashCode => publishedDate.hashCode ^ title.hashCode;
 }
