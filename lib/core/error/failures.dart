@@ -60,7 +60,7 @@ class UnhandledFailure extends Failure {
   UnhandledFailure({required this.className, required String message, this.stackTrace}) : super(message: message);
 
   @override
-  String get detailedMessage => '$message ${stackTrace.toString()}\n[err: unhandled_failure] \n[className: $className]';
+  String get detailedMessage => '$message ${stackTrace.toString()} [err: unhandled_failure] [className: $className]';
 }
 
 class ServerUnavailableFailure extends Failure {

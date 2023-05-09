@@ -47,11 +47,7 @@ class ArticlesCubit extends Cubit<ArticlesState> {
           emit(ArticlesErrorState(message: l.message));
         },
         (r) {
-          emit(
-            ArticlesSuccessState(
-              articles: r,
-            ),
-          );
+          emit(ArticlesSuccessState(articles: r));
         },
       );
     }
