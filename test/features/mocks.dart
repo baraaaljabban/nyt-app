@@ -5,6 +5,7 @@ import 'package:nyt/core/Network/network_info.dart';
 import 'package:nyt/features/articles/data/datasources/articles_remote_data_source.dart';
 import 'package:nyt/features/articles/data/datasources/local/articles_local_data_source.dart';
 import 'package:nyt/features/articles/domain/repositories/article_repository.dart';
+import 'package:nyt/core/Network/http_client.dart';
 
 @GenerateMocks([
   ArticleRepository,
@@ -13,5 +14,6 @@ import 'package:nyt/features/articles/domain/repositories/article_repository.dar
   InternetConnectionCheckerPlus,
   ArticlesLocalDataSource,
   ArticleRemoteDataSource,
+  HttpClient
 ])
 void main() {}

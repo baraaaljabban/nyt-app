@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_returning_null_for_void
+
 import 'dart:io';
 
 import 'package:dartz/dartz.dart';
@@ -8,14 +10,14 @@ import 'package:nyt/core/error/exceptions.dart';
 import 'package:nyt/core/error/failures.dart';
 import 'package:nyt/features/articles/data/models/article_most_popular_response.dart';
 import 'package:nyt/features/articles/data/repositories/articles_repository_impl.dart';
-import 'package:nyt/features/articles/domain/entities/article.dart';
+import 'package:nyt/features/articles/domain/repositories/article_repository.dart';
 
 import '../../../mocks.mocks.dart';
 
 void main() {
   late MockArticleRemoteDataSource remoteDataSource;
   late MockArticlesLocalDataSource localDataSource;
-  late ArticleRepositoryImpl articleRepository;
+  late ArticleRepository articleRepository;
   var articleType = ArticleType.emailed;
   var artical1 = ArticleModel(publishedDate: 'publishedDate', title: 'title');
   var artical2 = ArticleModel(publishedDate: 'publishedDate', title: 'title');
@@ -35,7 +37,7 @@ void main() {
     when(localDataSource.getCacheArticles(articleType: articleType)).thenAnswer((_) => articles);
     when(localDataSource.cacheArticles(articleType: articleType, articlesModel: articles)).thenAnswer((_) => null);
     when(remoteDataSource.getMostPopularArticle(type: articleType.name, days: days)).thenAnswer((_) async => response);
-    when(remoteDataSource.searchArticle(query: query)).thenAnswer((_) async => response);
+    // when(remoteDataSource.searchArticle(query: query)).thenAnswer((_) async => response.results);
     when(localDataSource.searchLocalArticles(query: query)).thenAnswer((_) => response.results);
   });
   group('Articles Repository get articles ', () {

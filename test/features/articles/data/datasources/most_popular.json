@@ -1,0 +1,1251 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2023 The New York Times Company.  All Rights Reserved.",
+    "num_results": 20,
+    "results": [
+        {
+            "uri": "nyt://article/96a1a7ff-03f9-5ba1-93a6-6f566b285ffa",
+            "url": "https://www.nytimes.com/2023/05/04/well/eat/ultraprocessed-food-mental-health.html",
+            "id": 100000008773311,
+            "asset_id": 100000008773311,
+            "source": "New York Times",
+            "published_date": "2023-05-04",
+            "updated": "2023-05-05 11:14:43",
+            "section": "Well",
+            "subsection": "Eat",
+            "nytdsection": "well",
+            "adx_keywords": "Food;Diet and Nutrition;Research;Brain;Mental Health and Disorders;Content Type: Service",
+            "column": null,
+            "byline": "By Sally Wadyka",
+            "type": "Article",
+            "title": "The Link Between Highly Processed Foods and Brain Health",
+            "abstract": "Eating packaged foods like cereal and frozen meals has been associated with anxiety, depression and cognitive decline. Scientists are still piecing together why.",
+            "des_facet": [
+                "Food",
+                "Diet and Nutrition",
+                "Research",
+                "Brain",
+                "Mental Health and Disorders",
+                "Content Type: Service"
+            ],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Jess Ebsworth",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/04/28/well/2Well-UltraPro-feature/2Well-UltraPro-feature-thumbStandard-v4.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/04/28/well/2Well-UltraPro-feature/2Well-UltraPro-feature-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/04/28/well/2Well-UltraPro-feature/2Well-UltraPro-feature-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/c8cb4cea-608b-5535-bb2d-6ef85381d941",
+            "url": "https://www.nytimes.com/2023/05/04/dining/drinks/best-boxed-wines.html",
+            "id": 100000008880916,
+            "asset_id": 100000008880916,
+            "source": "New York Times",
+            "published_date": "2023-05-04",
+            "updated": "2023-05-05 13:23:53",
+            "section": "Food",
+            "subsection": "Wine, Beer \u0026 Cocktails",
+            "nytdsection": "food",
+            "adx_keywords": "Wines;Containers and Packaging;Recycling of Waste Materials;Sustainable Living",
+            "column": null,
+            "byline": "By Eric Asimov",
+            "type": "Article",
+            "title": "10 Boxed Wines That Are Really Good, Seriously",
+            "abstract": "Thoughtful winemakers, motivated by environmental concerns, are turning to boxes.",
+            "des_facet": [
+                "Wines",
+                "Containers and Packaging",
+                "Recycling of Waste Materials",
+                "Sustainable Living"
+            ],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Tony Cenicola/The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04pour-01-gmzk/04pour-01-gmzk-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04pour-01-gmzk/04pour-01-gmzk-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04pour-01-gmzk/04pour-01-gmzk-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/f71970dc-f041-57cf-89cd-6c4c2b320aeb",
+            "url": "https://www.nytimes.com/2023/05/04/us/new-jersey-pasta-dump.html",
+            "id": 100000008891010,
+            "asset_id": 100000008891010,
+            "source": "New York Times",
+            "published_date": "2023-05-04",
+            "updated": "2023-05-05 13:25:12",
+            "section": "U.S.",
+            "subsection": "",
+            "nytdsection": "u.s.",
+            "adx_keywords": "Pasta;Waste Materials and Disposal;Jochnowitz, Nina;Old Bridge (NJ)",
+            "column": null,
+            "byline": "By Michael Levenson",
+            "type": "Article",
+            "title": "A New Jersey Mystery: Who Dumped Hundreds of Pounds of Pasta, and Why?",
+            "abstract": "The police and public works employees responded after “15 wheelbarrow loads” of pasta were dumped in mounds along a creek in Old Bridge, N.J.",
+            "des_facet": [
+                "Pasta",
+                "Waste Materials and Disposal"
+            ],
+            "org_facet": [],
+            "per_facet": [
+                "Jochnowitz, Nina"
+            ],
+            "geo_facet": [
+                "Old Bridge (NJ)"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "In Old Bridge, N.J., the mystery surrounding hundreds of pounds of pasta dumped by a creek is “all they’re talking about,” said Denise Bloom, an administrator of a local Facebook group.",
+                    "copyright": "Nina Jochnowitz",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04xp-pasta/04xp-pasta-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04xp-pasta/04xp-pasta-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04xp-pasta/04xp-pasta-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/365489ef-5bca-5849-b6fa-32c75cbe4702",
+            "url": "https://www.nytimes.com/2023/05/01/fashion/met-gala-2023-photos.html",
+            "id": 100000008838660,
+            "asset_id": 100000008838660,
+            "source": "New York Times",
+            "published_date": "2023-05-01",
+            "updated": "2023-05-04 11:07:14",
+            "section": "Fashion",
+            "subsection": "",
+            "nytdsection": "fashion",
+            "adx_keywords": "Met Gala;Fashion and Apparel;vis-photo",
+            "column": null,
+            "byline": "By The Styles Desk",
+            "type": "Article",
+            "title": "2023 Met Gala: Full Red Carpet Roundup",
+            "abstract": "Some of the biggest names from Hollywood, fashion, politics, media and music arrived to honor Karl Lagerfeld for fashion’s biggest night.",
+            "des_facet": [
+                "Met Gala",
+                "Fashion and Apparel",
+                "vis-photo"
+            ],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "ASAP Rocky and Rihanna, in Valentino.",
+                    "copyright": "Jutharat Pinyodoonyachet for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/01/fashion/poupay-met-gala-2023-3297/poupay-met-gala-2023-3297-thumbStandard-v3.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/01/fashion/poupay-met-gala-2023-3297/poupay-met-gala-2023-3297-mediumThreeByTwo210-v3.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/01/fashion/poupay-met-gala-2023-3297/poupay-met-gala-2023-3297-mediumThreeByTwo440-v3.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/f35d5510-20c6-5b62-a31e-22a6b18c0356",
+            "url": "https://www.nytimes.com/2023/05/03/opinion/chronic-pain-america-working-class.html",
+            "id": 100000008829888,
+            "asset_id": 100000008829888,
+            "source": "New York Times",
+            "published_date": "2023-05-03",
+            "updated": "2023-05-06 14:41:04",
+            "section": "Opinion",
+            "subsection": "",
+            "nytdsection": "opinion",
+            "adx_keywords": "Pain;Chronic Condition (Health);Pain-Relieving Drugs;Drug Abuse and Traffic;Opioids and Opiates;Addiction (Psychology);Alternative and Complementary Medicine;United States Economy;Income Inequality;Children and Childhood;Medicine and Health;vis-photo;United States",
+            "column": null,
+            "byline": "By Nicholas Kristof",
+            "type": "Article",
+            "title": "Why Americans Feel More Pain",
+            "abstract": "Chronic pain is not just a result of car accidents and workplace injuries but is also linked to troubled childhoods, loneliness, job insecurity and a hundred other pressures on working families.",
+            "des_facet": [
+                "Pain",
+                "Chronic Condition (Health)",
+                "Pain-Relieving Drugs",
+                "Drug Abuse and Traffic",
+                "Opioids and Opiates",
+                "Addiction (Psychology)",
+                "Alternative and Complementary Medicine",
+                "United States Economy",
+                "Income Inequality",
+                "Children and Childhood",
+                "Medicine and Health",
+                "vis-photo"
+            ],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [
+                "United States"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "When Bobbie Wert feels pain coming on, she repeats to herself, “It’s not so bad.”",
+                    "copyright": "Photographs by Ricardo Nagaoka for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/26Kristof-7-jvht/26Kristof-7-jvht-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/26Kristof-7-jvht/26Kristof-7-jvht-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/26Kristof-7-jvht/26Kristof-7-jvht-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/0da54837-f302-5f76-a9b9-4373cc7cbf48",
+            "url": "https://www.nytimes.com/2023/05/06/opinion/supremely-arrogant.html",
+            "id": 100000008894047,
+            "asset_id": 100000008894047,
+            "source": "New York Times",
+            "published_date": "2023-05-06",
+            "updated": "2023-05-08 18:12:57",
+            "section": "Opinion",
+            "subsection": "",
+            "nytdsection": "opinion",
+            "adx_keywords": "Corruption (Institutional);Abortion;Gifts to Public Officials;Ethics and Official Misconduct;Conflicts of Interest;Gorsuch, Neil M;Gorsuch Burford, Anne;Alito, Samuel A Jr;Thomas, Clarence;Thomas, Virginia Lamp;Crow, Harlan;Roberts, John G Jr;Supreme Court (US);Environmental Protection Agency",
+            "column": null,
+            "byline": "By Maureen Dowd",
+            "type": "Article",
+            "title": "Supremely Arrogant",
+            "abstract": "Are these men interpreting the law or settling scores?",
+            "des_facet": [
+                "Corruption (Institutional)",
+                "Abortion",
+                "Gifts to Public Officials",
+                "Ethics and Official Misconduct",
+                "Conflicts of Interest"
+            ],
+            "org_facet": [
+                "Supreme Court (US)",
+                "Environmental Protection Agency"
+            ],
+            "per_facet": [
+                "Gorsuch, Neil M",
+                "Gorsuch Burford, Anne",
+                "Alito, Samuel A Jr",
+                "Thomas, Clarence",
+                "Thomas, Virginia Lamp",
+                "Crow, Harlan",
+                "Roberts, John G Jr"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Elizabeth Frantz/Reuters",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/09/multimedia/06Dowd-3-vhjw/06Dowd-3-vhjw-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/09/multimedia/06Dowd-3-vhjw/06Dowd-3-vhjw-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/09/multimedia/06Dowd-3-vhjw/06Dowd-3-vhjw-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/513ca058-6f8f-5591-9154-77854a1538e6",
+            "url": "https://www.nytimes.com/2023/05/06/nyregion/connie-converse-nyc.html",
+            "id": 100000008880449,
+            "asset_id": 100000008880449,
+            "source": "New York Times",
+            "published_date": "2023-05-06",
+            "updated": "2023-05-08 16:46:30",
+            "section": "New York",
+            "subsection": "",
+            "nytdsection": "new york",
+            "adx_keywords": "Content Type: Personal Profile;Folk Music;Pop and Rock Music;Audio Recordings, Downloads and Streaming;Nineteen Hundred Fifties;Converse, Elizabeth Eaton (Connie);Greenwich Village (Manhattan, NY);Upper West Side (Manhattan, NY);Manhattan (NYC)",
+            "column": null,
+            "byline": "By Howard Fishman",
+            "type": "Article",
+            "title": "Before Dylan, There Was Connie Converse. Then She Vanished.",
+            "abstract": "There’s a resurgence of interest in the pioneering singer-songwriter who disappeared when she was 50.",
+            "des_facet": [
+                "Content Type: Personal Profile",
+                "Folk Music",
+                "Pop and Rock Music",
+                "Audio Recordings, Downloads and Streaming",
+                "Nineteen Hundred Fifties"
+            ],
+            "org_facet": [],
+            "per_facet": [
+                "Converse, Elizabeth Eaton (Connie)"
+            ],
+            "geo_facet": [
+                "Greenwich Village (Manhattan, NY)",
+                "Upper West Side (Manhattan, NY)",
+                "Manhattan (NYC)"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Connie Converse in Riverside Park, 1946. It is one of the first known images of Ms. Converse in New York.",
+                    "copyright": "Lois Aime",
+                    "approved_for_syndication": 0,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/02/multimedia/00converse-02-qtwl/00converse-02-qtwl-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/02/multimedia/00converse-02-qtwl/00converse-02-qtwl-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/02/multimedia/00converse-02-qtwl/00converse-02-qtwl-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/f200697c-8c3d-5d29-abb6-fea1ab6422aa",
+            "url": "https://www.nytimes.com/2023/05/06/us/otc-hearing-aids-young-users.html",
+            "id": 100000008660130,
+            "asset_id": 100000008660130,
+            "source": "New York Times",
+            "published_date": "2023-05-06",
+            "updated": "2023-05-08 23:39:17",
+            "section": "U.S.",
+            "subsection": "",
+            "nytdsection": "u.s.",
+            "adx_keywords": "Ears and Hearing;Hearing Aids;Youth",
+            "column": null,
+            "byline": "By Neelam Bohra",
+            "type": "Article",
+            "title": "Hearing Aids Are Changing. Their Users Are, Too.",
+            "abstract": "As more young people risk hearing loss, over-the-counter hearing aids are providing new options, but also confusing choices.",
+            "des_facet": [
+                "Ears and Hearing",
+                "Hearing Aids",
+                "Youth"
+            ],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Lauren Segal for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/multimedia/young-hearing-promo-qlcz/young-hearing-promo-qlcz-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/multimedia/young-hearing-promo-qlcz/young-hearing-promo-qlcz-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/multimedia/young-hearing-promo-qlcz/young-hearing-promo-qlcz-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/a266fd4c-2341-5bb2-b0f4-9b90bd2c9d95",
+            "url": "https://www.nytimes.com/2023/05/08/health/prostate-cancer-screening.html",
+            "id": 100000008892834,
+            "asset_id": 100000008892834,
+            "source": "New York Times",
+            "published_date": "2023-05-08",
+            "updated": "2023-05-08 23:41:19",
+            "section": "Health",
+            "subsection": "",
+            "nytdsection": "health",
+            "adx_keywords": "Tests (Medical);Prostate Specific Antigen;Men and Boys;Tumors;Cancer;Surgery and Surgeons;Elderly;Age, Chronological;Prostate Gland;Preventive Medicine;New England Journal of Medicine;California;Great Britain;United States",
+            "column": null,
+            "byline": "By Paula Span",
+            "type": "Article",
+            "title": "Too Many Older Men Are Still Screened for Prostate Cancer",
+            "abstract": "Most have low-risk cancers and rarely benefit from treatment, a new study finds. Actively monitoring the condition is often the best choice.",
+            "des_facet": [
+                "Tests (Medical)",
+                "Prostate Specific Antigen",
+                "Men and Boys",
+                "Tumors",
+                "Cancer",
+                "Surgery and Surgeons",
+                "Elderly",
+                "Age, Chronological",
+                "Prostate Gland",
+                "Preventive Medicine"
+            ],
+            "org_facet": [
+                "New England Journal of Medicine"
+            ],
+            "per_facet": [],
+            "geo_facet": [
+                "California",
+                "Great Britain",
+                "United States"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Joe Loree wanted to avoid the aggressive treatment for prostate cancer that he had seen his brother and friend undergo, and opted for a more conservative approach called active surveillance.",
+                    "copyright": "Jim Wilson/The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/09/multimedia/06SCI-SPAN-fcwk/06SCI-SPAN-fcwk-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/09/multimedia/06SCI-SPAN-fcwk/06SCI-SPAN-fcwk-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/09/multimedia/06SCI-SPAN-fcwk/06SCI-SPAN-fcwk-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/0cec93a6-a04d-5e48-85b9-991a4da29ccb",
+            "url": "https://www.nytimes.com/2023/05/07/opinion/climate-change-homeowners-insurance-housing-market.html",
+            "id": 100000008870544,
+            "asset_id": 100000008870544,
+            "source": "New York Times",
+            "published_date": "2023-05-07",
+            "updated": "2023-05-08 10:41:47",
+            "section": "Opinion",
+            "subsection": "",
+            "nytdsection": "opinion",
+            "adx_keywords": "Real Estate and Housing (Residential);Global Warming;Homeowners Insurance;Floods;Disasters and Emergencies;Appraisals and Valuation (Property);Wildfires",
+            "column": null,
+            "byline": "By Benjamin Keys",
+            "type": "Article",
+            "title": "Your Homeowners’ Insurance Bill Is the Canary in the Climate Coal Mine",
+            "abstract": "Wharton’s Ben Keys on how climate change is already reshaping the insurance and housing markets — and how our denial is only making the problem worse.",
+            "des_facet": [
+                "Real Estate and Housing (Residential)",
+                "Global Warming",
+                "Homeowners Insurance",
+                "Floods",
+                "Disasters and Emergencies",
+                "Appraisals and Valuation (Property)",
+                "Wildfires"
+            ],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Damon Winter/The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/07keys1-mqbg/07keys1-mqbg-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/07keys1-mqbg/07keys1-mqbg-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/07keys1-mqbg/07keys1-mqbg-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/a253efaa-e9df-529e-a7f1-4c945f1ad1dc",
+            "url": "https://www.nytimes.com/2023/05/02/magazine/annie-ernaux-delphine-de-vigan.html",
+            "id": 100000008879234,
+            "asset_id": 100000008879234,
+            "source": "New York Times",
+            "published_date": "2023-05-02",
+            "updated": "2023-05-08 17:28:07",
+            "section": "Magazine",
+            "subsection": "",
+            "nytdsection": "magazine",
+            "adx_keywords": "Books and Literature;French Language;Women and Girls;Content Type: Personal Profile;Anorexia Nervosa;Writing and Writers;Ernaux, Annie;de Vigan, Delphine;Paris (France);France",
+            "column": null,
+            "byline": "By Rachel Cusk",
+            "type": "Article",
+            "title": "Annie Ernaux Has Broken Every Taboo of What Women Are Allowed to Write",
+            "abstract": "The novelist Rachel Cusk on what makes the Nobel laureate’s fiction so shocking.",
+            "des_facet": [
+                "Books and Literature",
+                "French Language",
+                "Women and Girls",
+                "Content Type: Personal Profile",
+                "Anorexia Nervosa",
+                "Writing and Writers"
+            ],
+            "org_facet": [],
+            "per_facet": [
+                "Ernaux, Annie",
+                "de Vigan, Delphine"
+            ],
+            "geo_facet": [
+                "Paris (France)",
+                "France"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Ernaux in January 1984.",
+                    "copyright": "Marcus Schaefer for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/magazine/07mag-ernaux/07mag-ernaux-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/magazine/07mag-ernaux/07mag-ernaux-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/magazine/07mag-ernaux/07mag-ernaux-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/9187189a-619e-5754-97ac-0aad483eec43",
+            "url": "https://www.nytimes.com/2023/05/03/us/us-history-test-scores.html",
+            "id": 100000008878758,
+            "asset_id": 100000008878758,
+            "source": "New York Times",
+            "published_date": "2023-05-03",
+            "updated": "2023-05-05 09:10:19",
+            "section": "U.S.",
+            "subsection": "",
+            "nytdsection": "u.s.",
+            "adx_keywords": "Education (K-12);Tests and Examinations;History (Academic Subject);Mathematics;Reading and Writing Skills (Education);National Assessment of Educational Progress;Coronavirus (2019-nCoV);audio-neutral-informative;Education Department (US);United States",
+            "column": null,
+            "byline": "By Sarah Mervosh",
+            "type": "Article",
+            "title": "It’s Not Just Math and Reading: U.S. History Scores for 8th Graders Plunge",
+            "abstract": "The latest test results continue a nearly decade-long decline. Try a sample quiz to test your knowledge.",
+            "des_facet": [
+                "Education (K-12)",
+                "Tests and Examinations",
+                "History (Academic Subject)",
+                "Mathematics",
+                "Reading and Writing Skills (Education)",
+                "National Assessment of Educational Progress",
+                "Coronavirus (2019-nCoV)",
+                "audio-neutral-informative"
+            ],
+            "org_facet": [
+                "Education Department (US)"
+            ],
+            "per_facet": [],
+            "geo_facet": [
+                "United States"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The dip in civics performance was the first decline since the test began being administered in the late 1990s.",
+                    "copyright": "Joseph Rushmore for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/03/multimedia/03nat-civics-1-kctl/03nat-civics-1-kctl-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/03/multimedia/03nat-civics-1-kctl/03nat-civics-1-kctl-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/03/multimedia/03nat-civics-1-kctl/03nat-civics-1-kctl-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/cca003e0-1f93-5655-b1d7-f4e9abd17ead",
+            "url": "https://www.nytimes.com/2023/04/29/business/media/denver-airport.html",
+            "id": 100000008750175,
+            "asset_id": 100000008750175,
+            "source": "New York Times",
+            "published_date": "2023-04-29",
+            "updated": "2023-05-02 15:20:04",
+            "section": "Business",
+            "subsection": "Media",
+            "nytdsection": "business",
+            "adx_keywords": "Airports;Art;Advertising and Marketing;Conspiracy Theories;Rumors and Misinformation;internal-sub-only;Denver International Airport;Denver (Colo)",
+            "column": null,
+            "byline": "By Tiffany Hsu",
+            "type": "Article",
+            "title": "A Towering, Terrifying Demon Horse Isn’t Even the Weirdest Part",
+            "abstract": "The Denver airport is a magnet for conspiracy theories — and a case study in the line between mass delusion and fun.",
+            "des_facet": [
+                "Airports",
+                "Art",
+                "Advertising and Marketing",
+                "Conspiracy Theories",
+                "Rumors and Misinformation",
+                "internal-sub-only"
+            ],
+            "org_facet": [
+                "Denver International Airport"
+            ],
+            "per_facet": [],
+            "geo_facet": [
+                "Denver (Colo)"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "“Mustang,” a 32-foot-tall sculpture by the artist Luis Jimenez that is also known as Blucifer, stands outside Denver International Airport. Some people wonder if it is actually the pale horse of the apocalypse (the one ridden by Death).",
+                    "copyright": "Benjamin Rasmussen for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/04/11/multimedia/00denver-airport-01-ftpj/00denver-airport-01-ftpj-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/04/11/multimedia/00denver-airport-01-ftpj/00denver-airport-01-ftpj-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/04/11/multimedia/00denver-airport-01-ftpj/00denver-airport-01-ftpj-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/8fadc0b6-2ec7-5869-90b4-ce1de320eac9",
+            "url": "https://www.nytimes.com/2023/05/07/opinion/tucker-carlson-christian-right.html",
+            "id": 100000008892757,
+            "asset_id": 100000008892757,
+            "source": "New York Times",
+            "published_date": "2023-05-07",
+            "updated": "2023-05-08 12:44:30",
+            "section": "Opinion",
+            "subsection": "",
+            "nytdsection": "opinion",
+            "adx_keywords": "Christians and Christianity;Conservatism (US Politics);News and News Media;Right-Wing Extremism and Alt-Right;Storming of the US Capitol (Jan, 2021);United States Politics and Government;Carlson, Tucker;Fox News Channel;Newsmax Media",
+            "column": null,
+            "byline": "By David French",
+            "type": "Article",
+            "title": "Tucker Carlson’s Dark and Malign Influence Over the Christian Right",
+            "abstract": "The more the Christian right latches on to cruel men, the more difficult it becomes to argue that the cruelty is a bug, not a feature.",
+            "des_facet": [
+                "Christians and Christianity",
+                "Conservatism (US Politics)",
+                "News and News Media",
+                "Right-Wing Extremism and Alt-Right",
+                "Storming of the US Capitol (Jan, 2021)",
+                "United States Politics and Government"
+            ],
+            "org_facet": [
+                "Fox News Channel",
+                "Newsmax Media"
+            ],
+            "per_facet": [
+                "Carlson, Tucker"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Justin T. Gellerson for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/07French-qwfh/07French-qwfh-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/07French-qwfh/07French-qwfh-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/07French-qwfh/07French-qwfh-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/ac6658dc-f62a-520b-b713-4bf90541e214",
+            "url": "https://www.nytimes.com/2023/05/05/science/northern-lights.html",
+            "id": 100000008883074,
+            "asset_id": 100000008883074,
+            "source": "New York Times",
+            "published_date": "2023-05-05",
+            "updated": "2023-05-08 18:05:17",
+            "section": "Science",
+            "subsection": "",
+            "nytdsection": "science",
+            "adx_keywords": "Aurora Borealis;Space and Astronomy;Earth;Magnets and Magnetism;Physics;Seasons and Months;Sun;Aurora Australis;National Aeronautics and Space Administration;Alaska;Arctic Regions;United States",
+            "column": null,
+            "byline": "By April Rubin",
+            "type": "Article",
+            "title": "Get Ready to See More of the Northern Lights",
+            "abstract": "Over the past few months, viewings of the lights have increased in areas farther south than usual. That’s going to continue into 2025.",
+            "des_facet": [
+                "Aurora Borealis",
+                "Space and Astronomy",
+                "Earth",
+                "Magnets and Magnetism",
+                "Physics",
+                "Seasons and Months",
+                "Sun",
+                "Aurora Australis"
+            ],
+            "org_facet": [
+                "National Aeronautics and Space Administration"
+            ],
+            "per_facet": [],
+            "geo_facet": [
+                "Alaska",
+                "Arctic Regions",
+                "United States"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The Northern lights above Fairbanks, Alaska, in December.",
+                    "copyright": "Khalid Elfiqi/EPA, via Shutterstock",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/03/multimedia/00xp-northern-lights-fairbanks-lgqb/00xp-northern-lights-fairbanks-lgqb-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/03/multimedia/00xp-northern-lights-fairbanks-lgqb/00xp-northern-lights-fairbanks-lgqb-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/03/multimedia/00xp-northern-lights-fairbanks-lgqb/00xp-northern-lights-fairbanks-lgqb-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://interactive/1e0d683c-4174-5722-9d73-9257eb056b4e",
+            "url": "https://www.nytimes.com/interactive/2023/05/04/arts/zelda-nintendo-history.html",
+            "id": 100000008880290,
+            "asset_id": 100000008880290,
+            "source": "New York Times",
+            "published_date": "2023-05-04",
+            "updated": "2023-05-07 15:13:16",
+            "section": "Arts",
+            "subsection": "",
+            "nytdsection": "arts",
+            "adx_keywords": "vis-design;Computer and Video Games;Nintendo Switch (Video Game System);Miyamoto, Shigeru;Aonuma, Eiji;Nintendo Co Ltd",
+            "column": null,
+            "byline": "By Zachary Small and Rumsey Taylor",
+            "type": "Interactive",
+            "title": "How The Legend of Zelda Changed the Game",
+            "abstract": "For nearly four decades, the video game franchise has emphasized exploration and the joy of discovery. Millions of fans hope that the newest entry, Tears of the Kingdom, will push the boundaries of what an open-world game can be.",
+            "des_facet": [
+                "vis-design",
+                "Computer and Video Games",
+                "Nintendo Switch (Video Game System)"
+            ],
+            "org_facet": [
+                "Nintendo Co Ltd"
+            ],
+            "per_facet": [
+                "Miyamoto, Shigeru",
+                "Aonuma, Eiji"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "",
+                    "caption": "",
+                    "copyright": "Nintendo",
+                    "approved_for_syndication": 0,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/arts/04zelda-static-promo/04zelda-static-promo-thumbStandard-v3.png",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/arts/04zelda-static-promo/04zelda-static-promo-mediumThreeByTwo210.png",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/arts/04zelda-static-promo/04zelda-static-promo-mediumThreeByTwo440.png",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/be685a44-2e3f-5fc3-9b9a-7ce7e6d2c8bb",
+            "url": "https://www.nytimes.com/2023/05/03/style/seattle-homeless-tiny-homes.html",
+            "id": 100000008851068,
+            "asset_id": 100000008851068,
+            "source": "New York Times",
+            "published_date": "2023-05-03",
+            "updated": "2023-05-04 09:33:19",
+            "section": "Style",
+            "subsection": "",
+            "nytdsection": "style",
+            "adx_keywords": "Real Estate and Housing (Residential);Homeless Persons;Sustainable Living;Architecture;Seattle (Wash)",
+            "column": null,
+            "byline": "By Jane Margolies",
+            "type": "Article",
+            "title": "Tiny Homes for the Formerly Homeless",
+            "abstract": "A program that builds small energy-efficient houses in the backyards of Seattle residents is helping to address a persistent problem.",
+            "des_facet": [
+                "Real Estate and Housing (Residential)",
+                "Homeless Persons",
+                "Sustainable Living",
+                "Architecture"
+            ],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [
+                "Seattle (Wash)"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A panel made of juniper wood forms part of the exterior of a Block home in Seattle. The tiny homes are placed in the backyards of larger homes, with the support of the homeowner.",
+                    "copyright": "Reva Keller for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/07sp-design-tiny-alt-twvj/07sp-design-tiny-alt-twvj-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/07sp-design-tiny-alt-twvj/07sp-design-tiny-alt-twvj-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/07/multimedia/07sp-design-tiny-alt-twvj/07sp-design-tiny-alt-twvj-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/cfc818bf-8bb3-5321-9cc2-9dfaa8f9f36e",
+            "url": "https://www.nytimes.com/article/most-saved-recipes.html",
+            "id": 100000008883145,
+            "asset_id": 100000008883145,
+            "source": "New York Times",
+            "published_date": "2023-05-04",
+            "updated": "2023-05-04 18:37:22",
+            "section": "Food",
+            "subsection": "",
+            "nytdsection": "food",
+            "adx_keywords": "Recipes;Cooking and Cookbooks;internal-cooking-roundup",
+            "column": null,
+            "byline": "By Margaux Laskey",
+            "type": "Article",
+            "title": "Our 20 Most Saved Recipes of All Time",
+            "abstract": "The dishes readers tucked into their (digital) recipe boxes over and over again.",
+            "des_facet": [
+                "Recipes",
+                "Cooking and Cookbooks",
+                "internal-cooking-roundup"
+            ],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Bryan Gardner for The New York Times. Food Stylist: Barrett Washburne.",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/12/28/dining/03MOSTSAVED-Roundup-baked-feta/yf-baked-feta-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/12/28/dining/03MOSTSAVED-Roundup-baked-feta/03MOSTSAVED-Roundup-baked-feta-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/12/28/dining/03MOSTSAVED-Roundup-baked-feta/03MOSTSAVED-Roundup-baked-feta-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/debda4ed-6b54-5ec1-96c7-f6641253f8af",
+            "url": "https://www.nytimes.com/2023/05/02/opinion/ai-tech-climate-change.html",
+            "id": 100000008886925,
+            "asset_id": 100000008886925,
+            "source": "New York Times",
+            "published_date": "2023-05-02",
+            "updated": "2023-05-03 12:20:53",
+            "section": "Opinion",
+            "subsection": "",
+            "nytdsection": "opinion",
+            "adx_keywords": "Artificial Intelligence;Computers and the Internet;Global Warming;Regulation and Deregulation of Industry;Hinton, Geoffrey E;Manyika, James;Google Inc",
+            "column": null,
+            "byline": "By Thomas L. Friedman",
+            "type": "Article",
+            "title": "We Are Opening the Lids on Two Giant Pandora’s Boxes",
+            "abstract": "Social media illustrated some of the perils of unchecked technology.",
+            "des_facet": [
+                "Artificial Intelligence",
+                "Computers and the Internet",
+                "Global Warming",
+                "Regulation and Deregulation of Industry"
+            ],
+            "org_facet": [
+                "Google Inc"
+            ],
+            "per_facet": [
+                "Hinton, Geoffrey E",
+                "Manyika, James"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Doug Chayka",
+                    "approved_for_syndication": 0,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/opinion/02friedman/02friedman-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/opinion/02friedman/02friedman-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/05/04/opinion/02friedman/02friedman-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/93e85efb-b0bd-5a18-8d84-d90beaf83bd2",
+            "url": "https://www.nytimes.com/2023/05/08/health/primary-care-doctors-consolidation.html",
+            "id": 100000008781745,
+            "asset_id": 100000008781745,
+            "source": "New York Times",
+            "published_date": "2023-05-08",
+            "updated": "2023-05-08 23:05:18",
+            "section": "Health",
+            "subsection": "",
+            "nytdsection": "health",
+            "adx_keywords": "Health Insurance and Managed Care;Doctors;Medicare;Mergers, Acquisitions and Divestitures;Flach, Ken;Amazon.com Inc;CVS Caremark Corporation;UnitedHealth Group Inc;One Medical (1Life Healthcare Inc);Oak Street Health;Neighborhood Health Center (Portland, Ore)",
+            "column": null,
+            "byline": "By Reed Abelson",
+            "type": "Article",
+            "title": "Corporate Giants Buy Up Primary Care Practices at Rapid Pace",
+            "abstract": "Large health insurers and other companies are especially keen on doctors’ groups that care for patients in private Medicare plans.",
+            "des_facet": [
+                "Health Insurance and Managed Care",
+                "Doctors",
+                "Medicare",
+                "Mergers, Acquisitions and Divestitures"
+            ],
+            "org_facet": [
+                "Amazon.com Inc",
+                "CVS Caremark Corporation",
+                "UnitedHealth Group Inc",
+                "One Medical (1Life Healthcare Inc)",
+                "Oak Street Health",
+                "Neighborhood Health Center (Portland, Ore)"
+            ],
+            "per_facet": [
+                "Flach, Ken"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Nurse practitioner Haley Lynn, left, with patient Nathaniel Brookard, at Oak Street Health in Brooklyn. CVS Health recently bought Oak Street’s fast-growing chain of primary care centers that employ doctors in 21 states.",
+                    "copyright": "James Estrin/The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2023/03/28/multimedia/00Primary-01b-mftw/00Primary-01b-mftw-thumbStandard-v2.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/03/28/multimedia/00Primary-01b-mftw/00Primary-01b-mftw-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2023/03/28/multimedia/00Primary-01b-mftw/00Primary-01b-mftw-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        }
+    ]
+}

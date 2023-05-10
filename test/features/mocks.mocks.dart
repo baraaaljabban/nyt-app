@@ -3,28 +3,32 @@
 // Do not manually edit this file.
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'dart:async' as _i7;
-import 'dart:ui' as _i12;
+import 'dart:async' as _i9;
+import 'dart:ui' as _i14;
 
 import 'package:dartz/dartz.dart' as _i2;
+import 'package:http/http.dart' as _i7;
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart'
     as _i4;
-import 'package:location/location.dart' as _i11;
+import 'package:location/location.dart' as _i13;
 import 'package:location_platform_interface/location_platform_interface.dart'
     as _i3;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:nyt/core/enum/articles_type.dart' as _i10;
-import 'package:nyt/core/error/failures.dart' as _i8;
-import 'package:nyt/core/Network/network_info.dart' as _i13;
+import 'package:nyt/core/enum/articles_type.dart' as _i12;
+import 'package:nyt/core/error/failures.dart' as _i10;
+import 'package:nyt/core/Network/http_client.dart' as _i18;
+import 'package:nyt/core/Network/network_info.dart' as _i15;
 import 'package:nyt/features/articles/data/datasources/articles_remote_data_source.dart'
-    as _i15;
+    as _i17;
 import 'package:nyt/features/articles/data/datasources/local/articles_local_data_source.dart'
-    as _i14;
+    as _i16;
 import 'package:nyt/features/articles/data/models/article_most_popular_response.dart'
     as _i5;
-import 'package:nyt/features/articles/domain/entities/article.dart' as _i9;
-import 'package:nyt/features/articles/domain/repositories/article_repository.dart'
+import 'package:nyt/features/articles/data/models/article_search_response.dart'
     as _i6;
+import 'package:nyt/features/articles/domain/entities/article.dart' as _i11;
+import 'package:nyt/features/articles/domain/repositories/article_repository.dart'
+    as _i8;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
@@ -89,44 +93,66 @@ class _FakeArticleMostPopularResponse_4 extends _i1.SmartFake
         );
 }
 
+class _FakeArticleSearchResponse_5 extends _i1.SmartFake
+    implements _i6.ArticleSearchResponse {
+  _FakeArticleSearchResponse_5(
+    Object parent,
+    Invocation parentInvocation,
+  ) : super(
+          parent,
+          parentInvocation,
+        );
+}
+
+class _FakeResponse_6 extends _i1.SmartFake implements _i7.Response {
+  _FakeResponse_6(
+    Object parent,
+    Invocation parentInvocation,
+  ) : super(
+          parent,
+          parentInvocation,
+        );
+}
+
 /// A class which mocks [ArticleRepository].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockArticleRepository extends _i1.Mock implements _i6.ArticleRepository {
+class MockArticleRepository extends _i1.Mock implements _i8.ArticleRepository {
   MockArticleRepository() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i7.Future<_i2.Either<_i8.Failure, List<_i9.Article>>> getMostPopularArticle({
-    required _i10.ArticleType? type,
+  _i9.Future<_i2.Either<_i10.Failure, List<_i11.Article>>>
+      getMostPopularArticle({
+    required _i12.ArticleType? type,
     required int? days,
   }) =>
-      (super.noSuchMethod(
-        Invocation.method(
-          #getMostPopularArticle,
-          [],
-          {
-            #type: type,
-            #days: days,
-          },
-        ),
-        returnValue:
-            _i7.Future<_i2.Either<_i8.Failure, List<_i9.Article>>>.value(
-                _FakeEither_0<_i8.Failure, List<_i9.Article>>(
-          this,
-          Invocation.method(
-            #getMostPopularArticle,
-            [],
-            {
-              #type: type,
-              #days: days,
-            },
-          ),
-        )),
-      ) as _i7.Future<_i2.Either<_i8.Failure, List<_i9.Article>>>);
+          (super.noSuchMethod(
+            Invocation.method(
+              #getMostPopularArticle,
+              [],
+              {
+                #type: type,
+                #days: days,
+              },
+            ),
+            returnValue:
+                _i9.Future<_i2.Either<_i10.Failure, List<_i11.Article>>>.value(
+                    _FakeEither_0<_i10.Failure, List<_i11.Article>>(
+              this,
+              Invocation.method(
+                #getMostPopularArticle,
+                [],
+                {
+                  #type: type,
+                  #days: days,
+                },
+              ),
+            )),
+          ) as _i9.Future<_i2.Either<_i10.Failure, List<_i11.Article>>>);
   @override
-  _i7.Future<_i2.Either<_i8.Failure, List<_i9.Article>>> searchArticle(
+  _i9.Future<_i2.Either<_i10.Failure, List<_i11.Article>>> searchArticle(
           {required String? query}) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -135,8 +161,8 @@ class MockArticleRepository extends _i1.Mock implements _i6.ArticleRepository {
           {#query: query},
         ),
         returnValue:
-            _i7.Future<_i2.Either<_i8.Failure, List<_i9.Article>>>.value(
-                _FakeEither_0<_i8.Failure, List<_i9.Article>>(
+            _i9.Future<_i2.Either<_i10.Failure, List<_i11.Article>>>.value(
+                _FakeEither_0<_i10.Failure, List<_i11.Article>>(
           this,
           Invocation.method(
             #searchArticle,
@@ -144,24 +170,24 @@ class MockArticleRepository extends _i1.Mock implements _i6.ArticleRepository {
             {#query: query},
           ),
         )),
-      ) as _i7.Future<_i2.Either<_i8.Failure, List<_i9.Article>>>);
+      ) as _i9.Future<_i2.Either<_i10.Failure, List<_i11.Article>>>);
 }
 
 /// A class which mocks [Location].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockLocation extends _i1.Mock implements _i11.Location {
+class MockLocation extends _i1.Mock implements _i13.Location {
   MockLocation() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i7.Stream<_i3.LocationData> get onLocationChanged => (super.noSuchMethod(
+  _i9.Stream<_i3.LocationData> get onLocationChanged => (super.noSuchMethod(
         Invocation.getter(#onLocationChanged),
-        returnValue: _i7.Stream<_i3.LocationData>.empty(),
-      ) as _i7.Stream<_i3.LocationData>);
+        returnValue: _i9.Stream<_i3.LocationData>.empty(),
+      ) as _i9.Stream<_i3.LocationData>);
   @override
-  _i7.Future<bool> changeSettings({
+  _i9.Future<bool> changeSettings({
     _i3.LocationAccuracy? accuracy = _i3.LocationAccuracy.high,
     int? interval = 1000,
     double? distanceFilter = 0.0,
@@ -176,82 +202,82 @@ class MockLocation extends _i1.Mock implements _i11.Location {
             #distanceFilter: distanceFilter,
           },
         ),
-        returnValue: _i7.Future<bool>.value(false),
-      ) as _i7.Future<bool>);
+        returnValue: _i9.Future<bool>.value(false),
+      ) as _i9.Future<bool>);
   @override
-  _i7.Future<bool> isBackgroundModeEnabled() => (super.noSuchMethod(
+  _i9.Future<bool> isBackgroundModeEnabled() => (super.noSuchMethod(
         Invocation.method(
           #isBackgroundModeEnabled,
           [],
         ),
-        returnValue: _i7.Future<bool>.value(false),
-      ) as _i7.Future<bool>);
+        returnValue: _i9.Future<bool>.value(false),
+      ) as _i9.Future<bool>);
   @override
-  _i7.Future<bool> enableBackgroundMode({bool? enable = true}) =>
+  _i9.Future<bool> enableBackgroundMode({bool? enable = true}) =>
       (super.noSuchMethod(
         Invocation.method(
           #enableBackgroundMode,
           [],
           {#enable: enable},
         ),
-        returnValue: _i7.Future<bool>.value(false),
-      ) as _i7.Future<bool>);
+        returnValue: _i9.Future<bool>.value(false),
+      ) as _i9.Future<bool>);
   @override
-  _i7.Future<_i3.LocationData> getLocation() => (super.noSuchMethod(
+  _i9.Future<_i3.LocationData> getLocation() => (super.noSuchMethod(
         Invocation.method(
           #getLocation,
           [],
         ),
-        returnValue: _i7.Future<_i3.LocationData>.value(_FakeLocationData_1(
+        returnValue: _i9.Future<_i3.LocationData>.value(_FakeLocationData_1(
           this,
           Invocation.method(
             #getLocation,
             [],
           ),
         )),
-      ) as _i7.Future<_i3.LocationData>);
+      ) as _i9.Future<_i3.LocationData>);
   @override
-  _i7.Future<_i3.PermissionStatus> hasPermission() => (super.noSuchMethod(
+  _i9.Future<_i3.PermissionStatus> hasPermission() => (super.noSuchMethod(
         Invocation.method(
           #hasPermission,
           [],
         ),
-        returnValue: _i7.Future<_i3.PermissionStatus>.value(
+        returnValue: _i9.Future<_i3.PermissionStatus>.value(
             _i3.PermissionStatus.granted),
-      ) as _i7.Future<_i3.PermissionStatus>);
+      ) as _i9.Future<_i3.PermissionStatus>);
   @override
-  _i7.Future<_i3.PermissionStatus> requestPermission() => (super.noSuchMethod(
+  _i9.Future<_i3.PermissionStatus> requestPermission() => (super.noSuchMethod(
         Invocation.method(
           #requestPermission,
           [],
         ),
-        returnValue: _i7.Future<_i3.PermissionStatus>.value(
+        returnValue: _i9.Future<_i3.PermissionStatus>.value(
             _i3.PermissionStatus.granted),
-      ) as _i7.Future<_i3.PermissionStatus>);
+      ) as _i9.Future<_i3.PermissionStatus>);
   @override
-  _i7.Future<bool> serviceEnabled() => (super.noSuchMethod(
+  _i9.Future<bool> serviceEnabled() => (super.noSuchMethod(
         Invocation.method(
           #serviceEnabled,
           [],
         ),
-        returnValue: _i7.Future<bool>.value(false),
-      ) as _i7.Future<bool>);
+        returnValue: _i9.Future<bool>.value(false),
+      ) as _i9.Future<bool>);
   @override
-  _i7.Future<bool> requestService() => (super.noSuchMethod(
+  _i9.Future<bool> requestService() => (super.noSuchMethod(
         Invocation.method(
           #requestService,
           [],
         ),
-        returnValue: _i7.Future<bool>.value(false),
-      ) as _i7.Future<bool>);
+        returnValue: _i9.Future<bool>.value(false),
+      ) as _i9.Future<bool>);
   @override
-  _i7.Future<_i3.AndroidNotificationData?> changeNotificationOptions({
+  _i9.Future<_i3.AndroidNotificationData?> changeNotificationOptions({
     String? channelName,
     String? title,
     String? iconName,
     String? subtitle,
     String? description,
-    _i12.Color? color,
+    _i14.Color? color,
     bool? onTapBringToFront,
   }) =>
       (super.noSuchMethod(
@@ -268,27 +294,27 @@ class MockLocation extends _i1.Mock implements _i11.Location {
             #onTapBringToFront: onTapBringToFront,
           },
         ),
-        returnValue: _i7.Future<_i3.AndroidNotificationData?>.value(),
-      ) as _i7.Future<_i3.AndroidNotificationData?>);
+        returnValue: _i9.Future<_i3.AndroidNotificationData?>.value(),
+      ) as _i9.Future<_i3.AndroidNotificationData?>);
 }
 
 /// A class which mocks [ConnectionChecker].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockConnectionChecker extends _i1.Mock implements _i13.ConnectionChecker {
+class MockConnectionChecker extends _i1.Mock implements _i15.ConnectionChecker {
   MockConnectionChecker() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i7.Future<_i13.NetworkStatus> isConnected() => (super.noSuchMethod(
+  _i9.Future<_i15.NetworkStatus> isConnected() => (super.noSuchMethod(
         Invocation.method(
           #isConnected,
           [],
         ),
         returnValue:
-            _i7.Future<_i13.NetworkStatus>.value(_i13.NetworkStatus.Online),
-      ) as _i7.Future<_i13.NetworkStatus>);
+            _i9.Future<_i15.NetworkStatus>.value(_i15.NetworkStatus.Online),
+      ) as _i9.Future<_i15.NetworkStatus>);
 }
 
 /// A class which mocks [InternetConnectionCheckerPlus].
@@ -330,23 +356,23 @@ class MockInternetConnectionCheckerPlus extends _i1.Mock
         returnValueForMissingStub: null,
       );
   @override
-  _i7.Future<bool> get hasConnection => (super.noSuchMethod(
+  _i9.Future<bool> get hasConnection => (super.noSuchMethod(
         Invocation.getter(#hasConnection),
-        returnValue: _i7.Future<bool>.value(false),
-      ) as _i7.Future<bool>);
+        returnValue: _i9.Future<bool>.value(false),
+      ) as _i9.Future<bool>);
   @override
-  _i7.Future<_i4.InternetConnectionStatus> get connectionStatus =>
+  _i9.Future<_i4.InternetConnectionStatus> get connectionStatus =>
       (super.noSuchMethod(
         Invocation.getter(#connectionStatus),
-        returnValue: _i7.Future<_i4.InternetConnectionStatus>.value(
+        returnValue: _i9.Future<_i4.InternetConnectionStatus>.value(
             _i4.InternetConnectionStatus.connected),
-      ) as _i7.Future<_i4.InternetConnectionStatus>);
+      ) as _i9.Future<_i4.InternetConnectionStatus>);
   @override
-  _i7.Stream<_i4.InternetConnectionStatus> get onStatusChange =>
+  _i9.Stream<_i4.InternetConnectionStatus> get onStatusChange =>
       (super.noSuchMethod(
         Invocation.getter(#onStatusChange),
-        returnValue: _i7.Stream<_i4.InternetConnectionStatus>.empty(),
-      ) as _i7.Stream<_i4.InternetConnectionStatus>);
+        returnValue: _i9.Stream<_i4.InternetConnectionStatus>.empty(),
+      ) as _i9.Stream<_i4.InternetConnectionStatus>);
   @override
   bool get hasListeners => (super.noSuchMethod(
         Invocation.getter(#hasListeners),
@@ -358,7 +384,7 @@ class MockInternetConnectionCheckerPlus extends _i1.Mock
         returnValue: false,
       ) as bool);
   @override
-  _i7.Future<_i4.AddressCheckResult> isHostReachable(
+  _i9.Future<_i4.AddressCheckResult> isHostReachable(
           _i4.AddressCheckOptions? options) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -366,21 +392,21 @@ class MockInternetConnectionCheckerPlus extends _i1.Mock
           [options],
         ),
         returnValue:
-            _i7.Future<_i4.AddressCheckResult>.value(_FakeAddressCheckResult_3(
+            _i9.Future<_i4.AddressCheckResult>.value(_FakeAddressCheckResult_3(
           this,
           Invocation.method(
             #isHostReachable,
             [options],
           ),
         )),
-      ) as _i7.Future<_i4.AddressCheckResult>);
+      ) as _i9.Future<_i4.AddressCheckResult>);
 }
 
 /// A class which mocks [ArticlesLocalDataSource].
 ///
 /// See the documentation for Mockito's code generation for more information.
 class MockArticlesLocalDataSource extends _i1.Mock
-    implements _i14.ArticlesLocalDataSource {
+    implements _i16.ArticlesLocalDataSource {
   MockArticlesLocalDataSource() {
     _i1.throwOnMissingStub(this);
   }
@@ -388,7 +414,7 @@ class MockArticlesLocalDataSource extends _i1.Mock
   @override
   void cacheArticles({
     required List<_i5.ArticleModel>? articlesModel,
-    required _i10.ArticleType? articleType,
+    required _i12.ArticleType? articleType,
   }) =>
       super.noSuchMethod(
         Invocation.method(
@@ -403,7 +429,7 @@ class MockArticlesLocalDataSource extends _i1.Mock
       );
   @override
   List<_i5.ArticleModel> getCacheArticles(
-          {required _i10.ArticleType? articleType}) =>
+          {required _i12.ArticleType? articleType}) =>
       (super.noSuchMethod(
         Invocation.method(
           #getCacheArticles,
@@ -428,13 +454,13 @@ class MockArticlesLocalDataSource extends _i1.Mock
 ///
 /// See the documentation for Mockito's code generation for more information.
 class MockArticleRemoteDataSource extends _i1.Mock
-    implements _i15.ArticleRemoteDataSource {
+    implements _i17.ArticleRemoteDataSource {
   MockArticleRemoteDataSource() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i7.Future<_i5.ArticleMostPopularResponse> getMostPopularArticle({
+  _i9.Future<_i5.ArticleMostPopularResponse> getMostPopularArticle({
     required String? type,
     required int? days,
   }) =>
@@ -447,7 +473,7 @@ class MockArticleRemoteDataSource extends _i1.Mock
             #days: days,
           },
         ),
-        returnValue: _i7.Future<_i5.ArticleMostPopularResponse>.value(
+        returnValue: _i9.Future<_i5.ArticleMostPopularResponse>.value(
             _FakeArticleMostPopularResponse_4(
           this,
           Invocation.method(
@@ -459,15 +485,60 @@ class MockArticleRemoteDataSource extends _i1.Mock
             },
           ),
         )),
-      ) as _i7.Future<_i5.ArticleMostPopularResponse>);
+      ) as _i9.Future<_i5.ArticleMostPopularResponse>);
   @override
-  _i7.Future<dynamic> searchArticle({required String? query}) =>
+  _i9.Future<_i6.ArticleSearchResponse> searchArticle(
+          {required String? query}) =>
       (super.noSuchMethod(
         Invocation.method(
           #searchArticle,
           [],
           {#query: query},
         ),
-        returnValue: _i7.Future<dynamic>.value(),
-      ) as _i7.Future<dynamic>);
+        returnValue: _i9.Future<_i6.ArticleSearchResponse>.value(
+            _FakeArticleSearchResponse_5(
+          this,
+          Invocation.method(
+            #searchArticle,
+            [],
+            {#query: query},
+          ),
+        )),
+      ) as _i9.Future<_i6.ArticleSearchResponse>);
+}
+
+/// A class which mocks [HttpClient].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockHttpClient extends _i1.Mock implements _i18.HttpClient {
+  MockHttpClient() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  _i9.Future<_i7.Response> getData({
+    required String? path,
+    Map<String, String>? extraHeaders,
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #getData,
+          [],
+          {
+            #path: path,
+            #extraHeaders: extraHeaders,
+          },
+        ),
+        returnValue: _i9.Future<_i7.Response>.value(_FakeResponse_6(
+          this,
+          Invocation.method(
+            #getData,
+            [],
+            {
+              #path: path,
+              #extraHeaders: extraHeaders,
+            },
+          ),
+        )),
+      ) as _i9.Future<_i7.Response>);
 }

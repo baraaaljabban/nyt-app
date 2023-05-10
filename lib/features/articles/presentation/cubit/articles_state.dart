@@ -17,7 +17,9 @@ class ArticlesErrorState extends ArticlesState {
 
 class ArticlesSuccessState extends ArticlesState {
   final List<Article> articles;
+  final bool reachedMax;
   ArticlesSuccessState({
     required this.articles,
+    this.reachedMax = false,
   });
 }

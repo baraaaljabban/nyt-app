@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:nyt/features/articles/presentation/cubit/articles_cubit.dart';
+import 'package:nyt/core/argument/argument.dart';
+import 'package:nyt/core/navigation/nav_router.dart';
+import 'package:nyt/core/navigation/navigation_service.dart';
 
 class SearchController extends StatefulWidget {
   const SearchController({
@@ -61,6 +62,9 @@ class _SearchControllerState extends State<SearchController> {
   }
 
   void _dispatchSearchEvent() {
-    BlocProvider.of<ArticlesCubit>(context).searchForAnArticle(query: controller.text);
+    navigationService.navigateTo(
+      NavRouter.articlesListView,
+      arguments: ArticleListControllerArguments(isFromSearch: true, searchQuery: controller.text),
+    );
   }
 }
