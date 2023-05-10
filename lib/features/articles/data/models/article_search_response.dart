@@ -38,17 +38,14 @@ class ArticleSearchResponse {
 
 class Response {
   List<Doc> docs;
-  // Meta meta;
 
   Response({
     required this.docs,
-    // required this.meta,
   });
 
   Map<String, dynamic> toMap() {
     return {
       'docs': docs.map((x) => x.toMap()).toList(),
-      // 'meta': meta.toMap(),
     };
   }
 

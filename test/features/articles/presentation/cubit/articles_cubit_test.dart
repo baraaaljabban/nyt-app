@@ -32,7 +32,7 @@ void main() {
     searchArticleUC = SearchArticleUC(repository: mockArticleRepository);
 
     articlesCubit = ArticlesCubit(searchArticleUC: searchArticleUC, mostPopularArticleUC: mostPopularArticleUC);
-    when(mockArticleRepository.getMostPopularArticle(type: type, days: 7)).thenAnswer((_) async => right([]));
+    when(mockArticleRepository.getMostPopularArticle(type: type, days: 7, isLoadMore: false)).thenAnswer((_) async => right([]));
     when(searchArticleUC(params: SearchArticleParams(query: query))).thenAnswer(
       (_) async => const Right([]),
     );
@@ -42,7 +42,7 @@ void main() {
     blocTest<ArticlesCubit, ArticlesState>(
       'emits [ArticlesLoadingState, ArticlesSuccessState] when getArticlesList is called successfully',
       build: () {
-        when(mockArticleRepository.getMostPopularArticle(type: type, days: 7))
+        when(mockArticleRepository.getMostPopularArticle(type: type, days: 7, isLoadMore: false))
             .thenAnswer((realInvocation) async => right(expectedArticles));
         return articlesCubit;
       },
@@ -61,11 +61,10 @@ void main() {
      we should see sequence of stat Loading, Success, Success state with last
      success state has 10 items and first one 5 items''',
       build: () {
-        when(mockArticleRepository.getMostPopularArticle(type: type, days: 30))
+        when(mockArticleRepository.getMostPopularArticle(type: type, days: 7, isLoadMore: false))
             .thenAnswer((_) async => right([article1, article1, ...expectedArticles]));
-        when(mockArticleRepository.getMostPopularArticle(type: type, days: 7))
+        when(mockArticleRepository.getMostPopularArticle(type: type, days: 7, isLoadMore: true))
             .thenAnswer((_) async => right([article1, article1, ...expectedArticles]));
-
         return articlesCubit;
       },
       act: (cubit) async {
@@ -92,7 +91,8 @@ void main() {
       'emits [ArticlesLoadingState, ArticlesErrorState] when getArticlesList encounters an error',
       build: () => articlesCubit,
       act: (cubit) {
-        when(mockArticleRepository.getMostPopularArticle(type: type, days: 7)).thenAnswer((realInvocation) async => left(fail));
+        when(mockArticleRepository.getMostPopularArticle(type: type, days: 7, isLoadMore: false))
+            .thenAnswer((realInvocation) async => left(fail));
 
         cubit.getArticlesList(params: params);
       },

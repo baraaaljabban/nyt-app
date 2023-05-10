@@ -127,6 +127,7 @@ class MockArticleRepository extends _i1.Mock implements _i8.ArticleRepository {
       getMostPopularArticle({
     required _i12.ArticleType? type,
     required int? days,
+    required bool? isLoadMore,
   }) =>
           (super.noSuchMethod(
             Invocation.method(
@@ -135,6 +136,7 @@ class MockArticleRepository extends _i1.Mock implements _i8.ArticleRepository {
               {
                 #type: type,
                 #days: days,
+                #isLoadMore: isLoadMore,
               },
             ),
             returnValue:
@@ -147,6 +149,7 @@ class MockArticleRepository extends _i1.Mock implements _i8.ArticleRepository {
                 {
                   #type: type,
                   #days: days,
+                  #isLoadMore: isLoadMore,
                 },
               ),
             )),
@@ -415,6 +418,7 @@ class MockArticlesLocalDataSource extends _i1.Mock
   void cacheArticles({
     required List<_i5.ArticleModel>? articlesModel,
     required _i12.ArticleType? articleType,
+    required bool? isLoadMore,
   }) =>
       super.noSuchMethod(
         Invocation.method(
@@ -423,6 +427,7 @@ class MockArticlesLocalDataSource extends _i1.Mock
           {
             #articlesModel: articlesModel,
             #articleType: articleType,
+            #isLoadMore: isLoadMore,
           },
         ),
         returnValueForMissingStub: null,
