@@ -42,8 +42,7 @@ class ArticleRepositoryImpl extends ArticleRepository with ErrorHandler {
   Future<Either<Failure, List<Article>>> searchArticle({required String query}) async {
     try {
       var remoteArticles = await remoteDataSource.searchArticle(query: query);
-
-      return Right(remoteArticles.results);
+      return Right(remoteArticles.response.docs);
     } catch (e) {
       if (e is SocketException || e is ConnectionUnavailableException) {
         var articlesFromTable = localDataSource.searchLocalArticles(

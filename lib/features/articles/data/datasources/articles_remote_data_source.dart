@@ -9,7 +9,7 @@ abstract class ArticleRemoteDataSource {
     required String type,
     required int days,
   });
-  Future<dynamic> searchArticle({
+  Future<ArticleSearchResponse> searchArticle({
     required String query,
   });
 }

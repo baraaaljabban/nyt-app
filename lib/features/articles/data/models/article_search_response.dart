@@ -55,7 +55,6 @@ class Response {
   factory Response.fromMap(Map<String, dynamic> map) {
     return Response(
       docs: List<Doc>.from(map['docs'].map((x) => Doc.fromMap(x))),
-      // meta: Meta.fromMap(map['meta']),
     );
   }
 
