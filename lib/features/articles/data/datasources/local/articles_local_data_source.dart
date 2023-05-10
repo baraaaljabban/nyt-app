@@ -7,6 +7,7 @@ abstract class ArticlesLocalDataSource {
   void cacheArticles({
     required List<ArticleModel> articlesModel,
     required ArticleType articleType,
+    required bool isLoadMore,
   });
   List<ArticleModel> getCacheArticles({required ArticleType articleType});
   List<ArticleModel> searchLocalArticles({required String query});
@@ -22,12 +23,14 @@ class ArticlesLocalDataSourceImpl extends ArticlesLocalDataSource {
   void cacheArticles({
     required List<ArticleModel> articlesModel,
     required ArticleType articleType,
+    required bool isLoadMore,
   }) {
     try {
-      var articlesToBeDeleted =
-          store.box<ArticlesTable>().getAll().where((element) => element.articleType == articleType.name).map((e) => e.id).toList();
-      store.box<ArticlesTable>().removeMany(articlesToBeDeleted);
-
+      if (!isLoadMore) {
+        var articlesToBeDeleted =
+            store.box<ArticlesTable>().getAll().where((element) => element.articleType == articleType.name).map((e) => e.id).toList();
+        store.box<ArticlesTable>().removeMany(articlesToBeDeleted);
+      }
       var articles = articlesModel
           .map(
             (e) => ArticlesTable.fromModel(e, articleType),

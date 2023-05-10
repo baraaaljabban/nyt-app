@@ -19,13 +19,17 @@ class ArticleRepositoryImpl extends ArticleRepository with ErrorHandler {
   });
 
   @override
-  Future<Either<Failure, List<Article>>> getMostPopularArticle({required ArticleType type, required int days}) async {
+  Future<Either<Failure, List<Article>>> getMostPopularArticle({
+    required ArticleType type,
+    required int days,
+    required bool isLoadMore,
+  }) async {
     try {
       var remoteArticles = await remoteDataSource.getMostPopularArticle(
         days: days,
         type: type.name,
       );
-      localDataSource.cacheArticles(articleType: type, articlesModel: remoteArticles.results);
+      localDataSource.cacheArticles(articleType: type, articlesModel: remoteArticles.results, isLoadMore: isLoadMore);
       return Right(remoteArticles.results);
     } catch (e) {
       if (e is SocketException || e is ConnectionUnavailableException) {

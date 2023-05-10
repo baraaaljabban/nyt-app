@@ -5,10 +5,14 @@ import 'package:nyt/features/articles/data/models/article_most_popular_response.
 import 'package:nyt/features/articles/data/models/article_search_response.dart';
 
 abstract class ArticleRemoteDataSource {
+  /// [getMostPopularArticle]is used to load and load more of articles
+  /// takes [ArticleType] as string [type] and the number of [days]
   Future<ArticleMostPopularResponse> getMostPopularArticle({
     required String type,
     required int days,
   });
+
+  /// [searchArticle] search for an articles by [query]
   Future<ArticleSearchResponse> searchArticle({
     required String query,
   });

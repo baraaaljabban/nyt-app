@@ -56,7 +56,7 @@ class _ArticleListControllerState extends State<ArticleListController> with Snac
                       child: ListView.builder(
                         scrollDirection: Axis.vertical,
                         itemCount: state.articles.length + 1,
-                        controller: _scrollController,
+                        controller: state.reachedMax ? null : _scrollController,
                         itemBuilder: (BuildContext context, int index) {
                           if (index < state.articles.length) {
                             return Card(

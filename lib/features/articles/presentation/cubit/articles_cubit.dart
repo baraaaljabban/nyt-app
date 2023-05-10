@@ -47,6 +47,7 @@ class ArticlesCubit extends Cubit<ArticlesState> {
         params: MostPopularArticleParams(
       days: _currentDays,
       type: _articleType,
+      isLoadMore: true,
     ));
     result.fold(
       (l) {
