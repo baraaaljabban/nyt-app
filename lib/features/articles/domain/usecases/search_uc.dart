@@ -4,6 +4,7 @@ import 'package:nyt/core/error/failures.dart';
 import 'package:nyt/features/articles/domain/entities/article.dart';
 import 'package:nyt/features/articles/domain/repositories/article_repository.dart';
 
+///use case used to search for an article
 class SearchArticleUC extends UseCase<List<Article>, SearchArticleParams> {
   final ArticleRepository repository;
   SearchArticleUC({

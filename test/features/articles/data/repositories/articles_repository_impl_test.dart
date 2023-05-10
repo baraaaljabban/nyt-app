@@ -42,18 +42,18 @@ void main() {
   });
   group('Articles Repository get articles ', () {
     test('getting success list of articles', () async {
-      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days);
+      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days, isLoadMore: false);
       expect(response, Right(articles));
     });
     test('getting success list of articles even if there is issue in caching in local DB', () async {
-      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days);
+      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days, isLoadMore: false);
       when(localDataSource.cacheArticles(articleType: articleType, articlesModel: articles)).thenThrow((_) => LocalDataBaseException());
 
       expect(response, Right(articles));
     });
 
     test('getting success list of articles even if there is issue in caching in local DB', () async {
-      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days);
+      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days, isLoadMore: false);
       when(localDataSource.cacheArticles(articleType: articleType, articlesModel: articles)).thenAnswer((_) => any);
 
       expect(response, Right(articles));
@@ -63,7 +63,7 @@ void main() {
       when(remoteDataSource.getMostPopularArticle(type: articleType.name, days: days)).thenThrow(
         (_) => serverException,
       );
-      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days);
+      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days, isLoadMore: false);
       expect(response, Left(failure));
     });
 
@@ -71,7 +71,7 @@ void main() {
       when(remoteDataSource.getMostPopularArticle(type: articleType.name, days: days)).thenAnswer(
         (_) => throw const SocketException(''),
       );
-      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days);
+      var response = await articleRepository.getMostPopularArticle(type: articleType, days: days, isLoadMore: false);
       expect(response, Right(articles));
     });
   });

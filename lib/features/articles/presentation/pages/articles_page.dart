@@ -3,7 +3,6 @@ import 'package:nyt/core/argument/argument.dart';
 import 'package:nyt/core/enum/articles_type.dart';
 import 'package:nyt/core/navigation/nav_router.dart';
 import 'package:nyt/core/navigation/navigation_service.dart';
-import 'package:nyt/features/articles/domain/usecases/most_popular.dart';
 import 'package:nyt/features/articles/presentation/widgets/location_controller.dart';
 
 class ArticlesPage extends StatefulWidget {
